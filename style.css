@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+/* Global Section */
+body,
+html {
+    height: 100%;
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+    color: black;
+
+    /* The image used */
+    background-image: url("./Images/kitty-bg.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+
+}
+
+/* Background Image */
+
+
+/* 12 Column Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+}
+
+/* Navigation Bar */
+
+header {
+    background-color: white;
+    align-items: center;
+    z-index: 1;
+    border-bottom: solid 2px black;
+    margin-top: -30px;
+
+}
+
+header h1 {
+    color: orange;
+    font-size: 50px;
+    grid-column: 2/ span 5;
+    margin-bottom: 5px;
+}
+
+header h1 a {
+    color: orange;
+    text-decoration: none;
+}
+
+
+header nav {
+    grid-column: 8 / span 4;
+    justify-self: right;
+
+}
+
+header button {
+    padding: 10px;
+    background-color: orange;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 30px;
+
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    color: black;
+}
+
+header button:hover {
+    background-color: white;
+}
+
+/* Heading Section */
+
+.heading-text {
+    grid-column: 2 / span 5;
+
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    /* border: 2px solid black;
+    border-radius: 30px; */
+    text-align: left;
+    padding-top: 80px;
+    padding-left: 80px;
+
+    margin-left: 50px;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.heading-text h1 {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    color: black;
+    margin-top: -30px;
+}
+
+.heading-text span {
+    color: orange;
+
+}
+
+.heading-text p {
+    text-align: center;
+    padding-right: 80px;
+    margin-top: -30px;
+}
+
+.heading-text button {
+    padding: 15px;
+    background-color: orange;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid black;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.heading-text button a {
+    text-decoration: none;
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+    color: black;
+}
+
+
+
+/* Book Section */
+
+.book {
+    grid-column: 8 /span 5;
+    margin-top: 30px;
+}
+
+.book img {
+    width: 70%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: orange;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 2px solid black;
+
+
+
+}
+
+footer p {
+    grid-column: span 6;
+    justify-self: center;
+
+}
+
+footer .terms {
+    grid-column: 7 /span 5;
+    align-self: center;
+    justify-self: center;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding-left: 50px;
+
+}
+
+footer a:hover {
+    color: black;
+}
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        text-align: center;
+        grid-column: span 12;
+        margin: 0;
+        font-size: 40px;
+    }
+
+    header nav {
+        grid-column: span 12;
+        justify-self: center;
+    }
+
+    .heading-text {
+
+
+        text-align: left;
+        padding-top: 7dvh;
+        padding-left: 60px;
+
+        margin-left: 50px;
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+
+    .heading-text h1 {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'DM Serif Display', serif;
+        color: black;
+        margin-top: -30px;
+    }
+
+    .heading-text p {
+        text-align: center;
+        padding-right: 20px;
+        margin-left: -40px;
+        margin-top: -10px;
+    }
+
+    .heading-text button {
+        padding: 15px;
+        background-color: orange;
+        border-radius: 10px;
+        text-align: center;
+        border: 2px solid black;
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+
+    .heading-text button a {
+        text-decoration: none;
+        font-family: 'DM Serif Display', serif;
+        font-size: 20px;
+        color: black;
+    }
+
+
+
+    /* Book Section */
+
+    .book {
+        grid-column: 8 /span 5;
+        margin-top: 50px;
+    }
+
+    .book img {
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        text-align: center;
+        grid-column: span 12;
+        margin: 0;
+    }
+
+    header nav {
+        grid-column: span 12;
+        justify-self: center;
+    }
+
+    .heading-text {
+        grid-column: span 12;
+
+
+
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 40px;
+
+
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    .heading-text h1 {
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'DM Serif Display', serif;
+        color: black;
+        margin-top: -30px;
+        margin-left: -60px;
+    }
+
+    .heading-text p {
+        text-align: center;
+
+    }
+
+    .heading-text button {
+        padding: 15px;
+        background-color: orange;
+        border-radius: 10px;
+        text-align: center;
+        border: 2px solid black;
+        margin-left: -60px;
+        margin-top: 20px;
+    }
+
+    .heading-text button a {
+        text-decoration: none;
+        font-family: 'DM Serif Display', serif;
+        font-size: 20px;
+        color: black;
+    }
+
+
+
+    /* Book Section */
+
+    .book {
+        grid-column: span 12;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+
+
+    }
+
+    .book img {
+        width: 80%;
+
+    }
+
+}
+
+/* Animation Section */
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-down {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+header h1,
+header nav {
+    animation: fade-down 1s;
+}
+
+header {
+    animation: fade-in 1s;
+}
+
+.heading-text {
+    animation: fade-in 1s;
+}
+
+.book {
+    animation: fade-in 1s;
+}
+
+.heading-text {
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.heading-text:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.book {
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.book:hover {
+    transform: scale(1.1, 1.1);
+}
